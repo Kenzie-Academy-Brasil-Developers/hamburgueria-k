@@ -65,6 +65,7 @@
 }
 
 @media (width < 788px) {
+    
     .header{
         width: 100vw;
         background-color: var(--grey1);
@@ -88,4 +89,11 @@
         right: 0.9375rem;
         
     }
+    .inputContainer{
+        width: 100%;
+    }
+    .form{
+        width: 100vw;
+    }
+    
 }
