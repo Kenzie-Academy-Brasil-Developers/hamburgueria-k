@@ -1,11 +1,19 @@
 import { ProductCard } from "./ProductCard";
-
-export const ProductList = ({ productList }) => {
-   return (
-      <ul>
-         {productList.map((product) => (
-            <ProductCard key={product.id} product={product} />
-         ))}
-      </ul>
-   );
+import style from "./style.module.scss";
+export const ProductList = ({ productList, addProduct }) => {
+  return (
+    <section className={style.section}>
+      <div className="container">
+        <ul className={style.ul}>
+          {productList.map((product) => (
+            <ProductCard
+              key={product.id}
+              product={product}
+              addProduct={addProduct}
+            />
+          ))}
+        </ul>
+      </div>
+    </section>
+  );
 };
